@@ -1,3 +1,16 @@
+/*******************************************************************/
+/** MAC 438 - Programação Concorrente 						   */
+/** IME-USP - Primeiro Semestre de 2016 						   */
+/** Prof. Marcel Parolin Jackowski 								   */
+/** 															   */
+/** Primeiro Exercício-Programa 								   */
+/** Arquivo: main.c 											   */
+/** 															   */
+/** Wagner Ferreira Alves 7577319       						   */
+/** 															   */
+/** <data de entrega> 											   */
+/*******************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 
