@@ -4,26 +4,16 @@
 /** Prof. Marcel Parolin Jackowski                                 */
 /**                                                                */
 /** Primeiro Exercício-Programa                                    */
-/** Arquivo: main.c                                                */
+/** Arquivo: util.h                                                */
 /**                                                                */
 /** Wagner Ferreira Alves    7577319                               */
 /** Rafael Marinaro Verona   7577323                               */
 /** 28/03/2016                                                     */
 /*******************************************************************/
+#include <unistd.h> //STDOUT_FILENO
+#include <string.h> //strlen
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "util.h"
-
-int main(int argc, char const *argv[])
-{
-    /*int m, n, r, s;
-    m = atoi(argv[1]);
-    n = atoi(argv[2]);
-    r = atoi(argv[3]);
-    s = atoi(argv[4]);*/
-    imprimeAgora("Olá\n");
-    /*printf("%d %d %d %d\n", m, n, r, s);*/
-
-    return 0;
-}
+/* Imprime imediatamente na saída padrão o que tiver apontado por texto.
+   Função criada para substituir o printf, que possui um buffer 
+ */
+ void imprimeAgora(char *texto);
