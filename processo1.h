@@ -13,4 +13,4 @@
 #include "util.h" //imprimeAgora
 
 /* Ordena m inteiros aleatórios utilizando heap sort */
-void ordenacao();
+void ordenacao(int m);

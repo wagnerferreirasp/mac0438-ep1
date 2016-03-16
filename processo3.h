@@ -13,4 +13,4 @@
 #include "util.h" //imprimeAgora
 
 /* Resolve o problema da agulha de Buffon em r lançamentos */
-void agulhaDeBuffon();
+void agulhaDeBuffon(int r);
