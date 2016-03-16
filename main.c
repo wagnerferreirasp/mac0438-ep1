@@ -11,12 +11,16 @@
 /** 28/03/2016                                                     */
 /*******************************************************************/
 
-#include <stdio.h>
+#include <stdio.h> //printf 
 #include <stdlib.h>
 #include "processo1.h"
 #include "processo2.h"
 #include "processo3.h"
 #include "processo4.h"
+#include <time.h> // time
+#include <math.h> // sin
+
+#define PI 3.14159265358979323846
 
 int count = 800;
 
@@ -39,6 +43,20 @@ void ordenacao(int m) {
     }
 }
 
+void agulhaDeBuffon(int r) {
+    int i, t = 0;
+    printf("[agulhaDeBuffon] Agulha De Buffon irá executar %d iterações\n", r);
+    for (i = 0; i < r; ++i)
+    {
+        float d = (float) rand()/RAND_MAX;    
+        float theta = (float) 2 * PI * rand()/RAND_MAX;    
+        if (d + sin(theta) < 0 || d + sin(theta) > 1) {
+            t++;
+        }
+    }
+    printf("[agulhaDeBuffon] Probabilidade estimada: %f\n", (float) t/r);
+}
+
 void fibonacci(int n) {
     int i;
     for (i = 0; i < count; ++i)
@@ -48,17 +66,23 @@ void fibonacci(int n) {
     }
 }
 
-void agulhaDeBuffon(int r) {
-    printf("3 - Sou agulhaDeBuffon. Só entrei com parametro %d\n", r);
+float sec(float x) {
+    return 1.0/cos(x);
 }
 
 void integracaoPorSimulacao(int s) {
-    int i;
-    for (i = 0; i < count-20; ++i)
+    int i, t = 0;
+    printf("[integracaoPorSimulacao] Sorteando s = %d pontos\n", s);
+    for (i = 0; i < s; ++i)
     {
-        if (i % 16 == 0)
-            printf("4 - Sou o integracaoPorSimulacao com parametro %d\n", s);
+        float x = (float) rand()/RAND_MAX;
+        float y = (float) sec(1) * rand()/RAND_MAX;
+        if (y <= sec(x)) {
+            t++;
+        }
     }
+    printf("[integracaoPorSimulacao] Número de pontos abaixo da curva: t = %d\n", t);
+    printf("[integracaoPorSimulacao] Área estimada: %f\n", sec(1) * (float)t/s);
 }
 
 void esperaFilhosTerminarem() {
@@ -72,6 +96,7 @@ void esperaFilhosTerminarem() {
 
 int main(int argc, char const *argv[])
 {
+    srand(time(NULL));
     int m = 1, n = 2, r = 3, s = 4;
     /*m = atoi(argv[1]);
     n = atoi(argv[2]);

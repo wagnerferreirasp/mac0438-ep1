@@ -11,6 +11,6 @@
 /** 28/03/2016                                                     */
 /*******************************************************************/
 #include "util.h" //imprimeAgora
-
+#define PI 3.14159265358979323846
 /* Resolve o problema da agulha de Buffon em r lançamentos */
 void agulhaDeBuffon(int r);
