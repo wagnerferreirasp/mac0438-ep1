@@ -8,8 +8,7 @@ long long calcula_fibonacci(int n) {
 	return calcula_fibonacci(n-1) + calcula_fibonacci(n-2);
 }
 
-int fibonacci(int n) {
+void fibonacci(int n) {
 	printf("[fibonacci] Calculando o %d-ésimo número de Fibonacci\n", n);
 	printf("[fibonacci] O %d-ésimo número de Fibonacci é: %lld\n", n, fibonacci(n));
-    return 0;
 }
