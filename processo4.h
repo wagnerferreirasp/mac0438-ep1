@@ -8,9 +8,22 @@
 /**                                                                */
 /** Wagner Ferreira Alves    7577319                               */
 /** Rafael Marinaro Verona   7577323                               */
-/** 28/03/2016                                                     */
+/** 04/04/2016                                                     */
 /*******************************************************************/
-#include "util.h" //imprimeAgora
 
-/* Estima o valor de uma integral */
-void integracaoPorSimulacao();
+#ifndef PROCESSO4_H
+#define PROCESSO4_H
+
+#include <stdlib.h> /* rand, srand, RAND_MAX */
+#include <stdio.h> /* printf, NULL */
+#include <math.h> /* cos */
+#include <time.h> /* time */
+
+/* Devolve o valor da secante de x */
+float sec(float x);
+
+/* Estima o valor da integral de sec(X), 
+ * para 0 <= x <= 1, utilizando s números aleatórios */
+void integracaoPorSimulacao(int s);
+
+#endif

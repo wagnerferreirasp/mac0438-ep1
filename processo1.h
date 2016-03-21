@@ -8,9 +8,18 @@
 /**                                                                */
 /** Wagner Ferreira Alves    7577319                               */
 /** Rafael Marinaro Verona   7577323                               */
-/** 28/03/2016                                                     */
+/** 04/04/2016                                                     */
 /*******************************************************************/
-#include "util.h" //imprimeAgora
+
+#ifndef PROCESSO1_H
+#define PROCESSO1_H
+
+#include <stdlib.h> /* rand, srand, malloc */
+#include <stdio.h> /* printf, NULL */
+#include <time.h> /* time */
+
 
 /* Ordena m inteiros aleatórios utilizando heap sort */
-void ordenacao(int m);
+void heapsort(int m);
+
+#endif

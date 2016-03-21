@@ -8,9 +8,15 @@
 /**                                                                */
 /** Wagner Ferreira Alves    7577319                               */
 /** Rafael Marinaro Verona   7577323                               */
-/** 28/03/2016                                                     */
+/** 04/04/2016                                                     */
 /*******************************************************************/
-#include "util.h" //imprimeAgora
+
+#ifndef PROCESSO2_H
+#define PROCESSO2_H
+
+#include <stdio.h> /* printf */
 
 /* Calcula o n-ésimo número de fibonacci */
 void fibonacci(int n);
+
+#endif

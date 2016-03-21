@@ -8,9 +8,22 @@
 /**                                                                */
 /** Wagner Ferreira Alves    7577319                               */
 /** Rafael Marinaro Verona   7577323                               */
-/** 28/03/2016                                                     */
+/** 04/04/2016                                                     */
 /*******************************************************************/
-#include "util.h" //imprimeAgora
+
+#ifndef PROCESSO3_H
+#define PROCESSO3_H
+
+#include <stdlib.h> /* rand, srand, RAND_MAX */
+#include <stdio.h> /* printf, NULL */
+#include <math.h> /* sin */
+#include <time.h> /* time */
+
+
+/* Constante PI */
 #define PI 3.14159265358979323846
+
 /* Resolve o problema da agulha de Buffon em r lançamentos */
 void agulhaDeBuffon(int r);
+
+#endif
