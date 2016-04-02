@@ -31,6 +31,7 @@
 
 -Implementação:
 	Detalhes de implementação podem ser encontrados diretamente em comentários no código, detalhando a função de cada procedimento criado para o projeto.
+	O algoritmo 'Heapsort' foi implementado com base no pseudo-código presente no livro "Introduction to algorithms", 3ª edição, de Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein, páginas 154, 157 e 160.
 
 -Bônus:
 	A parte bônus do EP foi resolvida e se encontra no arquivo 'Bonus.pdf'.
