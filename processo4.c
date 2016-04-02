@@ -13,10 +13,12 @@
 
 #include "processo4.h"
 
+/* Calcula a secante de um ângulo */
 float sec(float x) {
     return 1.0/cos(x);
 }
 
+/* Calcula a integral de sec(x) por simulação */
 void integracaoPorSimulacao(int s) {
     int i, t = 0;
     srand (time(NULL));

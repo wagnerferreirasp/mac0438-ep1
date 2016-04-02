@@ -13,6 +13,7 @@
 
 #include "processo1.h"
 
+/* Imprime um array de inteiros na saída padrão */
 void imprimeVetordeInteiros(int n, int vetor[]) {
     int i;
     printf("[heapsort] ");
@@ -22,6 +23,7 @@ void imprimeVetordeInteiros(int n, int vetor[]) {
     printf("\n");
 }
 
+/* Troca o conteúdo de 'a' com o conteúdo de 'b' */
 void troca(int *a ,int *b)
 {
     int temp = *a;
@@ -29,6 +31,7 @@ void troca(int *a ,int *b)
     *b = temp;
 }
 
+/* Mantém a propriedade max-heap do array */
 void maxHeapify(int *arr, int i, int heapsize)
 {
     int l = 2*i, r =2*i+1, largest;
@@ -45,6 +48,7 @@ void maxHeapify(int *arr, int i, int heapsize)
     }
 }
 
+/* Produz um array max-heap a partir de um array desordenado */
 void buildMaxHeap(int *arr, int len, int heapsize)
 {
     heapsize = len;
@@ -55,6 +59,7 @@ void buildMaxHeap(int *arr, int len, int heapsize)
     }
 }
 
+/* Ordena o array */
 void executaHeapsort(int len, int arr[], int heapsize)
 {
     int i;
@@ -67,7 +72,7 @@ void executaHeapsort(int len, int arr[], int heapsize)
     }
 }
 
-
+/* Cria um array com números aleatórios e o ordena com o algoritmo heapsort */
 void heapsort(int m) {
     int i;
     int heapsize = m;

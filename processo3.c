@@ -13,6 +13,7 @@
 
 #include "processo3.h"
 
+/* Resolve o problema da agulha de Buffon */
 void agulhaDeBuffon(int r) {
     int i, t = 0;
     srand (time(NULL));

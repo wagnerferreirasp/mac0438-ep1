@@ -13,6 +13,7 @@
 
 #include "processo2.h"
 
+/* Calcula o n-ésimo número de Fibonacci recursivamente */
 long long calculaFibonacci(int n) {
 	if (n == 0) return 0;
 	if (n == 1) return 1;
@@ -20,6 +21,7 @@ long long calculaFibonacci(int n) {
 	return calculaFibonacci(n-1) + calculaFibonacci(n-2);
 }
 
+/* Calcula o n-ésimo número de Fibonacci */
 void fibonacci(int n) {
 	printf("[fibonacci] Calculando o %d-ésimo número de Fibonacci\n", n);
 	printf("[fibonacci] O %d-ésimo número de Fibonacci é: %lld\n", n, calculaFibonacci(n));
