@@ -16,7 +16,7 @@
 /* Imprime um array de inteiros na saída padrão */
 void imprimeVetordeInteiros(int n, int vetor[]) {
     int i;
-    printf("[heapsort] ");
+    printf(">h * [heapsort] ");
     for (i = 0; i < n; i++) {
         printf("%d ", vetor[i]);
     }
@@ -81,9 +81,9 @@ void heapsort(int m) {
     for (i = 0; i < m; i++) {
         vetor[i] = rand() % 100;
     }
-    printf("[heapsort] Ordenando o vetor: \n");
+    printf(">h * [heapsort] Ordenando o vetor: \n");
     imprimeVetordeInteiros(m, vetor);
     executaHeapsort(m, vetor, heapsize);
-    printf("[heapsort] Vetor ordenado: \n");
+    printf(">h * [heapsort] Vetor ordenado: \n");
     imprimeVetordeInteiros(m, vetor);
 }

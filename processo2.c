@@ -23,6 +23,6 @@ long long calculaFibonacci(int n) {
 
 /* Calcula o n-ésimo número de Fibonacci */
 void fibonacci(int n) {
-	printf("[fibonacci] Calculando o %d-ésimo número de Fibonacci\n", n);
-	printf("[fibonacci] O %d-ésimo número de Fibonacci é: %lld\n", n, calculaFibonacci(n));
+	printf(">f ** [fibonacci] Calculando o %d-ésimo número de Fibonacci\n", n);
+	printf(">f ** [fibonacci] O %d-ésimo número de Fibonacci é: %lld\n", n, calculaFibonacci(n));
 }

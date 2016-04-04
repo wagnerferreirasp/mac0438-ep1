@@ -1,6 +1,6 @@
 CFLAGS= -lm
 
-all: EP1
+all: clean EP1
 
 EP1: main.o processo1.o processo2.o processo3.o processo4.o 
 	gcc -o EP1 main.o processo1.o processo2.o processo3.o processo4.o $(CFLAGS)

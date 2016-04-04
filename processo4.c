@@ -22,7 +22,7 @@ float sec(float x) {
 void integracaoPorSimulacao(int s) {
     int i, t = 0;
     srand (time(NULL));
-    printf("[integracaoPorSimulacao] Sorteando s = %d pontos\n", s);
+    printf(">i **** [integracaoPorSimulacao] Sorteando s = %d pontos\n", s);
     for (i = 0; i < s; ++i) {
         float x = (float) rand()/RAND_MAX;
         float y = (float) sec(1) * rand()/RAND_MAX;
@@ -30,6 +30,6 @@ void integracaoPorSimulacao(int s) {
             t++;
         }
     }
-    printf("[integracaoPorSimulacao] Número de pontos abaixo da curva: t = %d\n", t);
-    printf("[integracaoPorSimulacao] Área estimada: %f\n", sec(1) * (float)t/s);
+    printf(">i **** [integracaoPorSimulacao] Número de pontos abaixo da curva: t = %d\n", t);
+    printf(">i **** [integracaoPorSimulacao] Área estimada: %f\n", sec(1) * (float)t/s);
 }
