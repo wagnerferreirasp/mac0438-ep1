@@ -12,26 +12,28 @@
 /*******************************************************************/
 
 -Arquivos:
-	O EP1 é composto pelos seguintes arquivos:
-		* main.c 													: Arquivo principal, cria os processos e cada processo faz chamadas a funções dos outros arquivos
-		* processo1.c, processo2.c, processo3.c e processo4.c 		: Arquivos contendo respectivamente e resolução dos problemas: Heapsort, n-ésimo número de Fibonacci, Agulha de Buffon e Integração por simulação.
-		* processo1.h, processo2.h, processo3.h e processo4.h 		: Headers dos respectivos arquivos descritos imediatamente acima.
-		* Makefile 													: O Makefile do projeto
-		* compilaRoda.sh 											: Um arquivo para compilar e executar um caso específico dos problemas
-		* Bonus.pdf 												: Arquivo contendo a análise dos programas bônus
+    O EP1 é composto pelos seguintes arquivos:
+        * main.c
+            Arquivo principal, cria os processos e cada processo faz chamadas a funções dos outros arquivos 
+        * processo1.c, processo2.c, processo3.c e processo4.c
+            Arquivos contendo respectivamente e resolução dos problemas: 
+            Heapsort, n-ésimo número de Fibonacci, Agulha de Buffon e Integração por simulação. 
+        * processo1.h, processo2.h, processo3.h e processo4.h
+            Headers dos respectivos arquivos descritos imediatamente acima.
+        * Makefile
+            O Makefile do projeto
+        * bonus.pdf                                         
+            Arquivo contendo a análise dos 3 programas bônus
 
 -Compilação:
-	Para compilar o programa basta executar 'make' no terminal, dentro da pasta do projeto, para rodar o arquivo 'Makefile' incluso no projeto.
+    Para compilar o programa basta executar 'make' no terminal, dentro da pasta do projeto, para rodar o arquivo 'Makefile' incluso no projeto.
 
 -Execução:
-	Para executar o programa basta executar './EP1 m n r s' no terminal, dentro da pasta do projeto, substituindo as letras 'm', 'n', 'r' e 's' por números inteiros. 
-
--Compilação e execução:
-	Alternativamente, pode-se simplesmente executar o arquivo 'compilaRoda.sh', contido no projeto, para compilar e em seguida rodar o programa com os parâmetros 'm', 'n', 'r' e 's' valendo respectivamente '40', '15', '100' e '50'.
+    Para executar o programa basta executar './EP1 m n r s' no terminal, dentro da pasta do projeto, substituindo as letras 'm', 'n', 'r' e 's' por números inteiros. 
 
 -Implementação:
-	Detalhes de implementação podem ser encontrados diretamente em comentários no código, detalhando a função de cada procedimento criado para o projeto.
-	O algoritmo 'Heapsort' foi implementado com base no pseudo-código presente no livro "Introduction to algorithms", 3ª edição, de Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein, páginas 154, 157 e 160.
+    Detalhes de implementação podem ser encontrados diretamente em comentários no código, detalhando a função de cada procedimento criado para o projeto.
+    O algoritmo 'Heapsort' foi implementado com base no pseudo-código presente no livro "Introduction to algorithms", 3ª edição em inglês, de Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein, páginas 154, 157 e 160.
 
 -Bônus:
-	A parte bônus do EP foi resolvida e se encontra no arquivo 'Bonus.pdf'.
+    A parte bônus do EP foi resolvida e se encontra no arquivo 'bonus.pdf'.
