@@ -28,9 +28,9 @@
 void criaProcesso(void (*funcaoDoProcessoFilho)(int), int parametro, char *idProcesso) {
     pid_t retornoDoFork = fork();
     if (retornoDoFork == 0) { // É o processo filho!
-        printf("%s começou a rodar\n", idProcesso, idProcesso);
+        printf("%s começou a rodar\n", idProcesso);
         funcaoDoProcessoFilho(parametro);
-        printf("%s parou de rodar\n", idProcesso, idProcesso);
+        printf("%s parou de rodar\n", idProcesso);
         exit(EXIT_SUCCESS);
     } 
 }
