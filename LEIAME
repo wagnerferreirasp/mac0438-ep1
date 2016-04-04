@@ -35,5 +35,16 @@
     Detalhes de implementação podem ser encontrados diretamente em comentários no código, detalhando a função de cada procedimento criado para o projeto.
     O algoritmo 'Heapsort' foi implementado com base no pseudo-código presente no livro "Introduction to algorithms", 3ª edição em inglês, de Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein, páginas 154, 157 e 160.
 
+- Considerações sobre o output:
+    Foram adicionados alguns caracteres que ajudam a ler a saída do EP. Abaixo quais são e as explicações sobre o que indicam:
+        =======  o processo pai começou a rodar ou a esperar
+        $        algum processo começou a rodar
+        @        algum processo terminou de rodar
+        >h *     o 'Heapsort' imprimiu algo 
+        >f **    o 'Fibonacci' imprimiu algo 
+        >a ***   o 'Agulha de Buffon' imprimiu algo 
+        >i ****  o 'Integração por simulação' imprimiu algo 
+    Com esses caracteres, facilmente percebe-se na coluna dos dois primeiros caracteres de cada linha qual a intercalação que os processos fizeram.
+        
 -Bônus:
     A parte bônus do EP foi resolvida e se encontra no arquivo 'bonus.pdf'.
