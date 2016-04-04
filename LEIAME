@@ -37,7 +37,7 @@
 
 - Considerações sobre o output:
     Foram adicionados alguns caracteres que ajudam a ler a saída do EP. Abaixo quais são e as explicações sobre o que indicam:
-        =======  o processo pai começou a rodar ou a esperar
+        =======  o processo pai começou a rodar, a esperar ou o processo pai terminou de rodar
         $        algum processo começou a rodar
         @        algum processo terminou de rodar
         >h *     o 'Heapsort' imprimiu algo 
